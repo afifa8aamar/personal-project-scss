@@ -1,5 +1,51 @@
+@import '../../palette.scss';
+@import '../../fonts.scss';
+
 .header {
-    width: 100%;
-    height: 200px;
-    background: red;
+    display: flex;
+    position: relative;
+    margin: auto;
+    background-color: $color-1;
+    color: $color-2;
+    font-family: $font-1;
+    font-size: 36px;
+    line-height: 21.36px;
+    text-transform: uppercase;
+
+    .logo {
+        margin-top: 27px;
+        margin-right: 317px;
+        margin-bottom: 24px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 27px;
+            height: 41px;
+            background: url(../../../images/header/logo.png);
+        }
+    }
+
+    .menu {
+        position: absolute;
+        top: 40px;
+        right: 0;
+
+        a {
+            margin-right: 37px;
+            color: $color-2;
+            font-family: $font-2;
+            font-size: 14px;
+            line-height: 21.36px;
+            text-decoration: none;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .phone-menu {
+        display: none;
+    }
 }

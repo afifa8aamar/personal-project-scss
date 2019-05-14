@@ -1,2 +1,7 @@
 @import 'media-queries';
+@import './palette.scss';
+@import './fonts.scss';
+
+/*components*/
+@import './components/test/index.scss';
 @import 'components/header/index.scss';

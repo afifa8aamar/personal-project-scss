@@ -3,7 +3,8 @@
 
 .header {
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     background-color: $color-1;
     color: $color-2;
     font-family: $font-1;
@@ -13,13 +14,15 @@
 
     .wrap {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 1168px;
-        margin: auto;
 
         .logo {
             margin-top: 27px;
-            margin-right: 317px;
-            margin-bottom: 24px;
+            margin-bottom: 32px;
+            color: $color-2;
+            text-decoration: none;
 
             &::before {
                 content: '';
@@ -30,13 +33,11 @@
             }
         }
 
-        .menu {
-            position: absolute;
-            top: 40px;
-            right: 0;
+        nav {
+            margin-top: -8px;
 
             a {
-                margin-right: 37px;
+                margin-right: 30.5px;
                 color: $color-2;
                 font-family: $font-2;
                 font-size: 14px;

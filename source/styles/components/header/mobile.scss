@@ -1,20 +1,33 @@
 .header {
-    background-color: yellow;
-    // to remove
+    padding-bottom: 7px;
 
-    .logo {
-        margin-top: 15px;
-        margin-bottom: 13px;
-    }
+    .wrap {
+        width: 87%;
 
-    .menu {
-        display: none;
-    }
+        .logo {
+            margin-top: 15px;
+            margin-bottom: 13px;
+            font-size: 27px;
 
-    .phone-menu {
-        display: inline;
-        position: absolute;
-        top: 18px;
-        right: 21px;
+            &::before {
+                width: 20px;
+                height: 31px;
+                background-size: cover;
+            }
+        }
+
+        nav {
+            display: none;
+        }
+
+        .phone-menu {
+            display: block;
+            margin-top: 7px;
+
+            img {
+                width: 49px;
+                height: 31px;
+            }
+        }
     }
 }

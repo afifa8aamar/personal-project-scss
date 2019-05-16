@@ -1,0 +1,23 @@
+.services {
+    flex-direction: column;
+    margin-top: -56px;
+    padding-bottom: 6px;
+
+    > h1 {
+        padding-top: 73px;
+        letter-spacing: -1px;
+        padding-bottom: 12px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 61px;
+
+        .service {
+            margin-right: 0;
+            margin-bottom: 74px;
+        }
+    }
+}

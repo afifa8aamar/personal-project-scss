@@ -1,0 +1,103 @@
+.ad {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 256px;
+    padding-bottom: 258px;
+    background: $color-3;
+
+    .left {
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        transform: translateY(50%);
+        text-decoration: none;
+
+        &::after {
+            content: '\f053';
+            display: block;
+            color: $color-2;
+            font-family: $font-3;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        color: $color-2;
+        text-transform: capitalize;
+
+        h1 {
+            margin-bottom: 38px;
+            padding-left: 24px;
+            font-family: $font-7;
+            font-size: 59px;
+            letter-spacing: 1px;
+            line-height: 36px;
+            word-spacing: 3px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            padding-left: 17px;
+            font-family: $font-5;
+            font-size: 73px;
+            font-weight: 1000;
+            line-height: 36px;
+
+        }
+
+        p {
+            margin-left:19px;
+            font-family: $font-1;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: none;
+            letter-spacing: -0.1px;
+        }
+    }
+
+    .more {
+        display: block;
+        margin-left: 25px;
+        padding: 3px 32px 3px 31px;
+        border: 1px solid #FFFFFF;
+        background-color: #3AB6B2;
+        box-shadow: 0 0 0 3px #3AB6B2;
+        color: #FFFFFF;
+        font-family: $font-6;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 34px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .right {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        width: 40px;
+        height: 40px;
+        transform: translateY(50%);
+        text-decoration: none;
+
+        &::after {
+            content: '\f054';
+            display: block;
+            color: $color-2;
+            font-family: $font-3;
+            text-decoration: none;
+        }
+    }
+}

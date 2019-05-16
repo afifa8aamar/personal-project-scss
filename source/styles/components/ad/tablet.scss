@@ -1,0 +1,33 @@
+.ad {
+    padding-top: 170px;
+    padding-bottom: 185px;
+
+    div {
+        margin-bottom: 38px;
+
+        h1 {
+            font-size: 59px;
+        }
+
+        h2 {
+            font-size: 71px;
+        }
+
+        p {
+            letter-spacing: -0.5px;
+        }
+    }
+
+    .more {
+        margin-left: 0;
+        padding: 1px 34px 3px 29px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+}

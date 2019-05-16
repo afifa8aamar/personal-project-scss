@@ -46,6 +46,10 @@
             p {
                 font-size: 13px;
                 line-height: 23px;
+                 
+                span {
+                    display: none;
+                }
             }
 
             .features {
@@ -72,7 +76,7 @@
                     }
 
                     div {
-
+                        margin-left: -10px;
                         h1 {
                             display: none;
                         }

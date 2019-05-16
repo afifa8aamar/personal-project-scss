@@ -17,10 +17,12 @@
         padding-top: 57px;
 
         .img {
-            background-image: url(../../../images/about/your-image-here.png);
             width: 100%;
             height: 420px;
+            margin-right: 0;
             margin-bottom: 29px;
+            background-image: url(../../../images/about/your-image-here.png);
+            background-size: auto;
         }
 
         .content {

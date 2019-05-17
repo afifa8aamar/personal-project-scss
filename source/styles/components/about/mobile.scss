@@ -3,17 +3,16 @@
     padding-top: 36px;
 
     > h1 {
-        margin-bottom: 6px;
+        margin-bottom: 24px;
         margin-left: -1px;
         font-size: 27px;
 
-        &::before {
-            content: 'who';
-            margin-right: 5.5px;
-            color: $color-5;
+        img {
+            top: 41px;
+        }
+
+        span {
             font-size: 27px;
-            line-height: 25px;
-            text-transform: uppercase;
         }
     }
 
@@ -23,6 +22,7 @@
         align-items: center;
         width: 88%;
         padding-top: 35px;
+        padding-bottom: 42px;
 
         .img {
             width: 100%;
@@ -38,6 +38,12 @@
         }
 
         .content {
+            width: 99%;
+            padding-left: 0;
+
+            .row {
+                flex-direction: column;
+            }
 
             h1 {
                 margin-bottom: 11px;
@@ -48,51 +54,65 @@
             }
 
             p {
+                margin-bottom: 33px;
                 font-size: 13px;
                 line-height: 23px;
-                 
-                span {
-                    display: none;
-                }
             }
 
             .features {
+                flex-direction: column;
 
                 h1 {
                     display: none;
                 }
 
                 .feature {
+                    width: 100%;
+                    margin-bottom: 22px;
 
-                    margin-top: 7px;
+                    &:last-child {
+                        margin-bottom: 22px;
+                    }
 
                     &::before {
-                        content: url(../../../images/about/Check.png);
+                        content: '';
                         display: block;
                         width: 24px;
                         height: 24px;
-                        margin-top: 29px;
-                        margin-right: 26px;
+                        margin-top: 5px;
+                        margin-right: 7px;
                         margin-bottom: 5px;
                         padding: 0;
                         border-radius: 0;
                         background: none;
+                        background-image: url(../../../images/about/Check.png);
+                        background-repeat: no-repeat;
                     }
 
                     div {
-                        margin-left: -10px;
+                        margin-top: 0;
+
                         h1 {
                             display: none;
                         }
                     }
 
-                    &.location::before {
-                        content: url(../../../images/about/Check.png);
+                    &.location {
+                        padding-left: 0;
+
+                        &::before {
+                            background-image: url(../../../images/about/Check.png);
+                        }
                     }
 
-                    &.heart::before {
-                        content: url(../../../images/about/Check.png);
-                        padding-bottom: 70px;
+                    &.heart {
+                        margin-bottom: 43px;
+                        padding-top: 0;
+                        padding-left: 0;
+
+                        &::before {
+                            background-image: url(../../../images/about/Check.png);
+                        }
                     }
 
                     &.new {
@@ -104,7 +124,6 @@
                     display: block;
                     width: 138px;
                     height: 42px;
-                    margin-top: -12px;
                     padding: 6px 28px 2px 28px;
                     background-color: $color-4;
                     color: $color-2;

@@ -8,16 +8,15 @@
     color: #000000;
 
     > h1 {
+        position: relative;
         margin-bottom: 13px;
         color: #3AB6B2;
         font-family: 'Raleway SemiBold';
         font-size: 31px;
         line-height: 34px;
         text-transform: uppercase;
-        position: relative;
 
         span {
-            margin-right: 5.5px;
             color: $color-5;
             font-size: 31px;
             line-height: 25px;
@@ -26,6 +25,7 @@
 
         img {
             position: absolute;
+            top: 46px;
             right: 50%;
             transform: translateX(50%);
         }
@@ -34,9 +34,9 @@
     .wrap {
         display: flex;
         justify-content: space-between;
-        width: 85%;
-        padding-top: 98px;
-        padding-bottom: 127px;
+        width: 87%;
+        padding-top: 113px;
+        padding-bottom: 140px;
         color: $color-6;
         font-family: $font-2;
         font-size: 14px;
@@ -47,12 +47,12 @@
             display: flex;
             justify-content: center;
             align-content: center;
-            width: 1138px;
-            height: 403px;
-            margin-right: 91px;
+            width: 643px;
+            height: 414px;
             background-image: url(../../../images/about/computer.png);
             background-repeat: no-repeat;
             overflow: hidden;
+            background-size: contain;
 
             .your-image-here {
                 position: absolute;
@@ -65,9 +65,11 @@
         .content {
             display: flex;
             flex-direction: column;
+            padding-left: 90px;
 
             h1 {
                 margin-bottom: 30px;
+                margin-left: -2px;
                 padding-top: 5px;
                 color: $color-7;
                 font-family: $font-9;
@@ -76,12 +78,20 @@
                 text-transform: uppercase;
                 word-spacing: -4.5px;
             }
+
+            p {
+                margin-bottom: 44px;
+            }
+
             .row {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: space-between;
             }
+
             .features {
                 display: flex;
+                flex-direction: column;            
 
                 .feature {
                     display: flex;
@@ -94,7 +104,7 @@
                         width: 24px;
                         height: 24px;
                         margin-top: 29px;
-                        margin-right: 21px;
+                        margin-right: 27px;
                         margin-bottom: 5px;
                         border-radius: 50%;
                         background-color: #3B3B3B;
@@ -124,19 +134,33 @@
                             font-weight: bold;
                             letter-spacing: -0.2px;
                             line-height: 18px;
+                            word-spacing: -1px;
                         }
                     }
 
-                    &.location::before {
-                        background-image: url(/images/about/location.png);
+                    &.location {
+                        padding-left: 13px;
+
+                        &::before {
+                            background-image: url(/images/about/location.png);
+                        }
                     }
 
-                    &.heart::before {
-                        background-image: url(/images/about/heart.png);
+                    &.heart {
+                        padding-top: 22px;
+
+                        &::before {
+                            background-image: url(/images/about/heart.png);
+                        }
                     }
 
-                    &.new::before {
+                    &.new {
+                        padding-top: 22px;
+                        padding-left: 13px;
+
+                        &::before {
                         background-image: url(/images/about/new.png);
+                        }
                     }
                 }
 

@@ -1,19 +1,24 @@
 .services {
     flex-direction: column;
-    margin-top: -56px;
-    padding-bottom: 6px;
+    padding-bottom: 0;
 
     > h1 {
-        padding-top: 73px;
-        letter-spacing: -1px;
+        margin-top: 73px;
+        margin-bottom: 79px;
+        padding-top: 0;
         padding-bottom: 12px;
+        letter-spacing: -1px;
+
+        img {
+            top: 44px;
+        }
     }
 
     .wrap {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding-top: 61px;
+        justify-content: center;
+        padding-top: 0;
 
         .service {
             margin-right: 0;

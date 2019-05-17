@@ -8,16 +8,24 @@
     background-color: $color-1;
 
     > h1 {
-        padding-top: 143px;
+        position: relative;
+        margin-top: 143px;
         padding-bottom: 5px;
         color: $color-2;
         font-family: $font-8;
         font-size: 31px;
         text-transform: uppercase;
+
+        img {
+            position: absolute;
+            top: 36px;
+            right: 50%;
+            transform: translateX(50%);
+        }
     }
 
     .wrap {
-        padding-top: 143px;
+        padding-top: 162px;
         display: flex;
         justify-content: space-between;
 
@@ -31,6 +39,26 @@
 
             &:last-child {
                 margin-right: 0;
+            }
+
+            &.visitor {
+
+                div {
+
+                    h1 {
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+
+            &.increase {
+
+                div {
+
+                    h1 {
+                        letter-spacing: 0.3px;
+                    }
+                }
             }
 
             a {
@@ -68,7 +96,6 @@
                     line-height: 40px;
                     letter-spacing: 0;
                 }
-
             }
         }
     }

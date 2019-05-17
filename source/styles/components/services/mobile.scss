@@ -1,23 +1,64 @@
 .services {
     flex-direction: column;
-    margin-top: -56px;
     padding-bottom: 6px;
 
     > h1 {
-        padding-top: 73px;
-        letter-spacing: -1px;
+        margin-top: 38px;
         padding-bottom: 12px;
+        font-size: 28px;
+        letter-spacing: -1px;
+
+        img {
+            top: 38px;
+        }
     }
 
     .wrap {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding-top: 61px;
+        justify-content: center;
+        padding-top: 69px;
 
         .service {
             margin-right: 0;
-            margin-bottom: 74px;
+            margin-bottom: 37px;
+
+            a {
+                margin-bottom: 28px;
+            }
+
+            div {
+                letter-spacing: 0;
+
+                h1 {
+                    margin-bottom: 3px;
+                    letter-spacing: -1px;
+                }
+            }
+
+            &.visitor {
+                margin-bottom: 40px;
+
+                div {
+
+                    h1 {
+                        margin-bottom: 4px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+
+            &.increase {
+                margin-bottom: 33px;
+
+                div {
+
+                    h1 {
+                        margin-bottom: 4px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
         }
     }
 }

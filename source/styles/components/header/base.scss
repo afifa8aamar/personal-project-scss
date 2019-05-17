@@ -45,6 +45,10 @@
                 text-decoration: none;
             }
 
+            a:hover {
+                color: $color-4;
+            }
+
             a:last-child {
                 margin-right: 0;
             }

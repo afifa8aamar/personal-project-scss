@@ -1,2 +1,25 @@
 .contact {
+
+    > h1 {
+        margin-top: 79px;
+        font-size: 29px;
+
+        img {
+            top: 44px;
+        }
+    }
+
+    .wrap {
+
+        .info {
+            width: 88%;
+            margin-top: 78px;
+            margin-bottom: 43px;
+        }
+
+        > .input {
+            width: 94%;
+            margin-bottom: 83px;
+        }
+    }
 }

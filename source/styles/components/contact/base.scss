@@ -1,0 +1,159 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+    > h1 {
+        position: relative;
+        margin-top: 95px;
+        padding-bottom: 5px;
+        color: $color-1;
+        font-family: $font-8;
+        font-size: 31px;
+        text-transform: uppercase;
+
+        img {
+            position: absolute;
+            top: 42px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .info {
+            align-items: center;
+            justify-content: center;
+            margin-top: 108px;
+            margin-bottom: 85px;
+
+            > div {
+                display: inline-flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                margin-right: 164px;
+                color: $color-11;
+                font-family: $font-10;
+                font-size: 15px;
+                line-height: 24px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.location {
+
+                    a {
+                        display: inline-block;
+                        width: 26px;
+                        height: 34px;
+                        margin-bottom: 19px;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        background: none;
+                        background-image: url(../../../images/contact/Location.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                &.mail {
+
+                        a {
+                        display: inline-block;
+                        width: 30px;
+                        height: 24px;
+                        margin-bottom: 19px;
+                        margin-left: 47%;
+                        transform: translateX(-50%);
+                        background: none;
+                        background-image: url(../../../images/contact/Mail.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                &.support {
+                        a {
+                        display: inline-block;
+                        width: 48px;
+                        height: 34px;
+                        margin-bottom: 19px;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        background: none;
+                        background-image: url(../../../images/contact/Support.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+
+        .input {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            margin-bottom: 122px;
+            padding-bottom: 169px;
+
+            .row {
+                display: flex;
+                width: 100%;
+                height: 46px;
+                margin-bottom: 14px;
+
+                :last-child {
+                    margin-bottom: 0;
+                }
+
+                #name {
+                    flex-grow: 1;
+                    margin-right: 16px;
+                    border: 1px solid $color-12;
+                    border-radius: 2px;
+                }
+
+                #email {
+                    flex-grow: 1;
+                    border: 1px solid $color-12;
+                    border-radius: 2px;
+                }
+
+                #subject {
+                    flex-grow: 1;
+                    border: 1px solid $color-12;
+                    border-radius: 2px;
+                }
+
+                #message {
+                    flex-grow: 1;
+                    height: 170px;
+                    border: 1px solid $color-12;
+                    border-radius: 2px;
+                }
+            }
+
+            #button {
+                width: 160px;
+                height: 42px;
+                border: none;
+                background-color: $color-4;
+                color: $color-2;
+                text-decoration: none;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

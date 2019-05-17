@@ -1,0 +1,104 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-1;
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            margin-top: 47px;
+            margin-bottom: 49px;
+            color: $color-2;
+            text-decoration: none;
+            font-family: $font-1;
+            font-size: 36px;
+            line-height: 21.36px;
+            text-transform: uppercase;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 27px;
+                height: 41px;
+                background: url(../../../images/header/logo.png);
+            }
+        }
+
+        .icons {
+            padding-bottom: 48px;
+
+            .icon {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.gmail {
+                    background: url(../../../images/footer/Gmail.png);
+
+                    &:hover {
+                        background: url(../../../images/footer/Gmail-Hover.png);
+                    }
+                }
+
+                &.twitter {
+                    background: url(../../../images/footer/Twitter.png);
+
+                    &:hover {
+                        background: url(../../../images/footer/Twitter-Hover.png);
+                    }
+                }
+
+                &.facebook {
+                    background: url(../../../images/footer/Facebook.png);
+
+                    &:hover {
+                        background: url(../../../images/footer/Facebook-Hover.png);
+                    }
+                }
+
+                &.behance {
+                    background: url(../../../images/footer/Behance.png);
+
+                    &:hover {
+                        background: url(../../../images/footer/Behance-Hover.png);
+                    }
+                }
+
+                &.deviantart {
+                    background: url(../../../images/footer/Deviantart.png);
+
+                    &:hover {
+                        background: url(../../../images/footer/Deviantart-Hover.png);
+                    }
+                }
+
+                &.flickr {
+                    background: url(../../../images/footer/Flickr.png);
+
+                    &:hover {
+                        background: url(../../../images/footer/Flickr-Hover.png);
+                    }
+                }
+            }
+
+        }
+
+        span {
+            margin-bottom: 58px;
+            color: $color-2;
+            font-family: $font-6;
+            font-size: 11px;
+            letter-spacing: 0.1px;
+        }
+    }
+}

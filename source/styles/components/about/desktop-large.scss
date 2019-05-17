@@ -3,10 +3,13 @@
     .wrap {
 
         .img {
+            background-size: contain;
 
             .your-image-here {
-                width: 91%;
-                height: 62%;
+
+                img {
+                    display: none;
+                }
             }
         }
     }

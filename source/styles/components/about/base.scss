@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     padding-top: 114px;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: $color-2;
+    color: $color-1;
 
     > h1 {
         position: relative;
         margin-bottom: 13px;
-        color: #3AB6B2;
+        color: $color-4;
         font-family: $font-9;
         font-size: 31px;
         line-height: 34px;
@@ -53,13 +53,6 @@
             background-image: url(../../../images/about/computer.png);
             background-repeat: no-repeat;
             background-size: contain;
-
-            .your-image-here {
-                position: absolute;
-                top: 27px;
-                width: 593px;
-                height: 331px;
-            }
         }
 
         .content {
@@ -108,7 +101,7 @@
                         margin-right: 27px;
                         margin-bottom: 5px;
                         border-radius: 50%;
-                        background-color: #3B3B3B;
+                        background-color: $color-8;
                         background-image: url(/images/about/settings.png);
                         background-repeat: no-repeat;
                         background-position: center;

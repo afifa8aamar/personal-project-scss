@@ -1,2 +1,53 @@
 .portfolio {
+
+    > h1 {
+        margin-top: 76px;
+        font-size: 29px;
+    }
+
+    .wrap {
+        width: 94%;
+        padding-top: 81px;
+
+        .row {
+            margin-bottom: 21px;
+
+            .col.col-2 {
+                flex-grow: 1;
+            }
+
+            .col {
+                height: 229px;
+                margin-right: 21px;
+
+                .hover {
+                    height: 58px;
+
+                    h1 {
+                        padding-top: 1px;
+                        font-size: 12px;
+                        line-height: 22px;
+                    }
+
+                    span {
+                        font-size: 10px;
+                        line-height: 22px;
+                    }
+                }
+
+                .icons {
+                    top: 43%;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+
+            &.row-2 .col-2 {
+                display: none;
+            }
+        }
+    }
 }

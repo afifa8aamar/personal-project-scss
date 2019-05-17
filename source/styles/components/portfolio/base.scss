@@ -121,7 +121,39 @@
                             background-image: url(../../../images/portfolio/link.png);
                         }
                     }
+
+                    .mobile {
+                        display: none;;
+                        z-index: 4;
+                        width: 26px;
+                        height: 26px;
+                        margin-top: 5px;
+                        margin-right: 7px;
+                        margin-bottom: 5px;
+                        padding: 0;
+                        border: 2px solid $color-4;
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        &.facebook {
+                            background-image: url(../../../images/portfolio/Facebook.png);
+                        }
+
+                        &.twitter {
+                            background-image: url(../../../images/portfolio/Twitter.png);
+                        }
+
+                        &.instagram {
+                            background-image: url(../../../images/portfolio/Instagram.png);
+                        }
+
+                        &.desktop {
+                            display: none;
+                        }
+                    }
                 }
+                
 
                 &:hover {
 

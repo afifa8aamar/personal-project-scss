@@ -31,6 +31,10 @@
             margin-bottom: 12px;
             background-image: url(../../../images/about/your-image-here.png);
             background-size: auto;
+
+            .your-image-here {
+                display: none;
+            }
         }
 
         .content {

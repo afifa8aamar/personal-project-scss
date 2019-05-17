@@ -1,0 +1,153 @@
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    > h1 {
+        position: relative;
+        margin-top: 111px;
+        padding-bottom: 5px;
+        color: $color-1;
+        font-family: $font-8;
+        font-size: 31px;
+        text-transform: uppercase;
+
+        img {
+            position: absolute;
+            top: 42px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 106px;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 6px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .col {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                height: 379px;
+                margin-right: 6px;
+                background-color: $color-1;
+
+                .your-image-here {
+                    display: none;
+                    z-index: 3;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $color-10;
+                    opacity: 0.50;
+                }
+
+                &:hover > .your-image-here{
+                    display: block;
+                }
+
+                .hover {
+                    display: none;
+                    position: absolute;
+                    z-index: 3;
+                    bottom: 0;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 75px;
+                    background-color: $color-1;
+
+                    h1 {
+                        color: $color-2;
+                        font-family: $font-8;
+                        font-size: 17px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                    }
+
+                    span {
+                        color: $color-4;
+                        font-family: $font-8;
+                        font-size: 13px;
+                        font-style: italic;
+                        line-height: 28px;
+                    }
+                }
+
+                .icons {
+                    display: flex;
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+
+                    img {
+                        display: none;
+                        z-index: 4;
+                        width: 46px;
+                        height: 46px;
+                        margin-top: 5px;
+                        margin-right: 7px;
+                        margin-bottom: 5px;
+                        padding: 0;
+                        border: 2px solid $color-4;
+                        border-radius: 50%;
+                        background-image: url(../../../images/portfolio/Eye.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        &:hover {
+                            background-color: $color-4;
+
+                        }
+
+                        &.link {
+                            background-image: url(../../../images/portfolio/link.png);
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    .hover {
+                        display: flex;
+                    }
+                }
+
+                &:hover > .icons img{
+                    display: block;                    
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.col-1 {
+                    flex-grow: 1;
+                }
+
+                &.col-2 {
+                    flex-grow: 2;
+                    margin-bottom: 0;
+
+                }
+            }
+        }
+    }
+}

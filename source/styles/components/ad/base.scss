@@ -1,13 +1,7 @@
 .ad {
-    display: flex;
     position: relative;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    padding-top: 256px;
-    padding-bottom: 258px;
+    height: 760px;
     background: $color-3;
 
     .left {
@@ -28,13 +22,13 @@
         }
     }
 
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
+    .content {
+        position: absolute;
+        text-align: center;
+        top: 257px;
         color: $color-2;
         text-transform: capitalize;
+        width: 100%;
 
         h1 {
             margin-bottom: 38px;
@@ -63,23 +57,30 @@
             line-height: 24px;
             text-transform: none;
             letter-spacing: -0.1px;
+            margin-bottom: 40px;
+        }
+
+        a {
+            display: inline-block;
+            margin-left: 25px;
+            padding: 3px 32px 3px 31px;
+            border: 1px solid #FFFFFF;
+            background-color: #3AB6B2;
+            box-shadow: 0 0 0 3px #3AB6B2;
+            color: #FFFFFF;
+            font-family: $font-6;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 34px;
+            text-decoration: none;
+            text-transform: uppercase;
         }
     }
 
-    .more {
-        display: block;
-        margin-left: 25px;
-        padding: 3px 32px 3px 31px;
-        border: 1px solid #FFFFFF;
-        background-color: #3AB6B2;
-        box-shadow: 0 0 0 3px #3AB6B2;
-        color: #FFFFFF;
-        font-family: $font-6;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 34px;
-        text-decoration: none;
-        text-transform: uppercase;
+    .img {
+        width: 100%;
+        height: 760px;
+        z-index: 2;
     }
 
     .right {

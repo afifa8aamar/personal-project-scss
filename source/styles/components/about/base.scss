@@ -14,14 +14,20 @@
         font-size: 31px;
         line-height: 34px;
         text-transform: uppercase;
+        position: relative;
 
-        &::before {
-            content: 'who';
+        span {
             margin-right: 5.5px;
             color: $color-5;
             font-size: 31px;
             line-height: 25px;
             text-transform: uppercase;
+        }
+
+        img {
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
         }
     }
 
@@ -37,12 +43,23 @@
         line-height: 27px;
 
         .img {
+            position: relative;
             display: flex;
+            justify-content: center;
+            align-content: center;
             width: 1138px;
+            height: 403px;
             margin-right: 91px;
             background-image: url(../../../images/about/computer.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            overflow: hidden;
+
+            .your-image-here {
+                position: absolute;
+                top: 27px;
+                width: 593px;
+                height: 331px;
+            }
         }
 
         .content {
@@ -59,31 +76,40 @@
                 text-transform: uppercase;
                 word-spacing: -4.5px;
             }
-
-            .features {
+            .row {
                 display: flex;
                 flex-direction: column;
+            }
+            .features {
+                display: flex;
 
                 .feature {
                     display: flex;
                     flex-direction: row;
+                    width: 275px;
 
                     &::before {
-                        content: url(../../../images/about/settings.png);
+                        content: '';
                         display: block;
                         width: 24px;
                         height: 24px;
                         margin-top: 29px;
-                        margin-right: 48px;
+                        margin-right: 21px;
                         margin-bottom: 5px;
-                        padding: 19.5px;
-                        border-radius: 70px;
+                        border-radius: 50%;
                         background-color: #3B3B3B;
+                        flex-shrink: 0;
+                        width: 63px;
+                        height: 63px;
+                        background-position: center;
+                        background-image: url(/images/about/settings.png);
+                        background-repeat: no-repeat;
                     }
 
                     div {
+                        display: flex;
+                        flex-direction: column;
                         margin-top: 27px;
-                        margin-left: -18px;
                         color: $color-6;
                         font-family: $font-2;
                         font-size: 13px;
@@ -102,15 +128,15 @@
                     }
 
                     &.location::before {
-                        content: url(../../../images/about/location.png);
+                        background-image: url(/images/about/location.png);
                     }
 
                     &.heart::before {
-                        content: url(../../../images/about/heart.png);
+                        background-image: url(/images/about/heart.png);
                     }
 
                     &.new::before {
-                        content: url(../../../images/about/new.png);
+                        background-image: url(/images/about/new.png);
                     }
                 }
 

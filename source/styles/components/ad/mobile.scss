@@ -1,14 +1,18 @@
 .ad {
-    padding-top: 45px;
-    padding-bottom: 60px;
-
-    div {
+    height: 212px;
+    .img {
+        width: 100%;
+        height: 212px;
+        z-index: 2;
+    }
+    .content {
+        top : 45px;
         margin-bottom: 19px;
         line-height: 10px;
 
         h1 {
-            margin-bottom: 0;
             margin-bottom: -2px;
+            margin-left: -4px;
             padding-left: 0;
             font-size: 25px;
             letter-spacing: 0;
@@ -17,7 +21,7 @@
         }
 
         h2 {
-            margin-bottom: 0;
+            margin-bottom: 1px;
             margin-left: -5px;
             padding-left: 0;
             font-size: 30px;
@@ -25,29 +29,22 @@
         }
 
         p {
-            margin-bottom: 0;
+            margin-bottom: 18px;
             margin-left: 0;
             font-size: 9px;
             letter-spacing: -0.75px;
             line-height: 10px;
         }
+        a {
+            display: inline-block;
+            margin-left: -2px;
+            padding: 0 8px 0 8px;
+            font-size: 7px;
+            line-height: 13.77px; 
+        }
     }
 
-    .more {
-        display: block;
-        margin-left: -2px;
-        padding: 0 8px 0 8px;
-        border: 1px solid #FFFFFF;
-        background-color: #3AB6B2;
-        box-shadow: 0 0 0 3px #3AB6B2;
-        color: #FFFFFF;
-        font-family: "Raleway";
-        font-size: 7px;
-        font-weight: bold;
-        line-height: 13.77px; 
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+
 
     .left {
         display: none;

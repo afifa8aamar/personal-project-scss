@@ -19,8 +19,8 @@
         width: 1168px;
 
         .logo {
-            margin-top: 27px;
-            margin-bottom: 32px;
+            padding-top: 27px; // margin-top: 27px; //comment
+            padding-bottom: 32px; // margin-bottom: 32px; //comment
             color: $color-2;
             text-decoration: none;
 

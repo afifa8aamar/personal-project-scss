@@ -1,6 +1,3 @@
-@import '../../palette.scss';
-@import '../../fonts.scss';
-
 .header {
     display: flex;
     align-items: center;
@@ -19,8 +16,8 @@
         width: 1168px;
 
         .logo {
-            padding-top: 27px; // margin-top: 27px; //comment
-            padding-bottom: 32px; // margin-bottom: 32px; //comment
+            padding-top: 27px;
+            padding-bottom: 32px;
             color: $color-2;
             text-decoration: none;
 

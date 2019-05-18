@@ -1,5 +1,8 @@
 .ad {
+    display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 760px;
     background: $color-3;
@@ -7,11 +10,12 @@
     .left {
         display: block;
         position: absolute;
+        z-index: 3;
         bottom: 50%;
         left: 0;
         width: 40px;
         height: 40px;
-        transform: translateY(50%);
+        transform: translateY(-50%);
         text-decoration: none;
 
         &::after {
@@ -24,8 +28,9 @@
     }
 
     .content {
+        display: inline-block;
         position: absolute;
-        top: 257px;
+        z-index: 3;
         width: 100%;
         color: $color-2;
         text-align: center;
@@ -55,7 +60,7 @@
             margin-left: 19px;
             font-family: $font-1;
             font-size: 20px;
-            letter-spacing: -0.1px;
+            letter-spacing: -.1px;
             line-height: 24px;
             text-transform: none;
         }
@@ -78,11 +83,17 @@
     }
 
     .img {
-        z-index: 2;
+        position: relative;
+        z-index: 1;
         width: 100%;
         height: 760px;
 
         img {
+            display: flex;
+            position: absolute;
+            z-index: 2;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 100%;
             margin: auto;
@@ -93,11 +104,12 @@
     .right {
         display: block;
         position: absolute;
+        z-index: 3;
         right: 0;
         bottom: 50%;
         width: 40px;
         height: 40px;
-        transform: translateY(50%);
+        transform: translateY(-50%);
         text-decoration: none;
 
         &::after {

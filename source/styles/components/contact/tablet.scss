@@ -4,12 +4,14 @@
         margin-top: 79px;
         font-size: 29px;
 
-        img {
-            top: 44px;
+        &::before {
+            bottom: -23px;
         }
     }
 
     .wrap {
+        padding-top: 65px;
+        padding-bottom: 2px;
 
         .info {
             width: 88%;
@@ -20,6 +22,10 @@
         > .input {
             width: 94%;
             margin-bottom: 83px;
+
+            .button {
+                bottom: -45px;
+            }
         }
     }
 }

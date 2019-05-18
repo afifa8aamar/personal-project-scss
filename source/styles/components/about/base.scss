@@ -23,17 +23,41 @@
             text-transform: uppercase;
         }
 
-        img {
+        &::before {
+            content: '';
+            display: block;
             position: absolute;
-            top: 46px;
-            right: 50%;
-            transform: translateX(50%);
+            bottom: -23px;
+            left: 50%;
+            width: 50%;
+            height: 1px;
+            transform: translateX(-50%);
+            background: $color-1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 15px;
+            bottom: -15px;
+            left: 50%;
+            width: 36px;
+            height: 18px;
+            margin-top: 30px;
+            transform: translateX(-50%);
+            background-color: $color-2;
+            background-image: url(../../../images/about/speak-icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: center;
+            background-position-x: center;
         }
     }
 
     .wrap {
         display: flex;
-        justify-content: space-between;
+        align-content: space-between;
         width: 87%;
         padding-top: 113px;
         padding-bottom: 128px;
@@ -47,18 +71,30 @@
             position: relative;
             align-content: center;
             justify-content: center;
-            width: 643px;
+            width: 637px;
             height: 414px;
+            margin-right: 94px;
             overflow: hidden;
-            background-image: url(../../../images/about/computer.png);
+            background-color: $color-2;
             background-repeat: no-repeat;
             background-size: contain;
+
+            img {
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                background-size: contain;
+            }
         }
 
         .content {
             display: flex;
             flex-direction: column;
-            padding-left: 90px;
 
             h1 {
                 margin-bottom: 30px;
@@ -130,7 +166,6 @@
                     }
 
                     &.location {
-                        padding-left: 13px;
 
                         &::before {
                             background-image: url(/images/about/location.png);
@@ -138,7 +173,6 @@
                     }
 
                     &.heart {
-                        padding-top: 22px;
 
                         &::before {
                             background-image: url(/images/about/heart.png);
@@ -146,8 +180,6 @@
                     }
 
                     &.new {
-                        padding-top: 22px;
-                        padding-left: 13px;
 
                         &::before {
                             background-image: url(/images/about/new.png);

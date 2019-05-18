@@ -16,76 +16,82 @@
         font-size: 31px;
         text-transform: uppercase;
 
-        img {
+        &::before {
+            content: '';
+            display: block;
             position: absolute;
-            top: 36px;
-            right: 50%;
-            transform: translateX(50%);
+            bottom: -11px;
+            left: 50%;
+            width: 70%;
+            height: 1px;
+            transform: translateX(-50%);
+            background: $color-2;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 6px;
+            left: 50%;
+            width: 36px;
+            height: 18px;
+            margin-top: 30px;
+            transform: translateX(-50%);
+            background-color: $color-1;
+            background-image: url(../../../images/services/services.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: center;
+            background-position-x: center;
         }
     }
 
     .wrap {
         display: flex;
         justify-content: space-between;
+        width: 87%;
         padding-top: 162px;
 
         .service {
             display: flex;
+            position: relative;
             flex-direction: column;
-            align-content: center;
+            align-content: space-between;
             align-items: center;
             width: 292px;
-            margin-right: 145px;
 
             &:last-child {
                 margin-right: 0;
             }
 
-            div {
+            h1 {
+                margin-bottom: 6px;
+                color: $color-4;
+                font-family: $font-2;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0;
+                line-height: 40px;
+                text-transform: uppercase;
+            }
+
+            p {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 color: $color-2;
                 font-family: $font-6;
                 font-size: 14px;
-                letter-spacing: 0.3px;
+                letter-spacing: .3px;
                 line-height: 22px;
                 text-align: center;
-
-                h1 {
-                    margin-bottom: 6px;
-                    color: $color-4;
-                    font-family: $font-2;
-                    font-size: 20px;
-                    font-weight: bold;
-                    letter-spacing: 0;
-                    line-height: 40px;
-                    text-transform: uppercase;
-                }
             }
 
-            &.visitor {
-
-                div {
-
-                    h1 {
-                        letter-spacing: 0.5px;
-                    }
-                }
-            }
-
-            &.increase {
-
-                div {
-
-                    h1 {
-                        letter-spacing: 0.3px;
-                    }
-                }
-            }
-
-            a {
+            &::before {
+                content: '';
                 display: flex;
+                position: relative;
                 align-items: center;
                 justify-content: center;
                 width: 124px;
@@ -93,10 +99,59 @@
                 margin-bottom: 34px;
                 background-image: url(../../../images/services/background.png);
                 background-repeat: no-repeat;
+            }
 
-                &:hover {
-                    background-image: url(../../../images/services/background-hover.png);
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 124px;
+                height: 144px;
+                background-image: url(../../../images/services/graphchart.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &.graphchart {
+
+                h1 {
+                    margin-left: 8px;
                 }
+
+                span {
+                    margin-left: -6px;
+                }
+            }
+
+            &.visitor {
+
+                h1 {
+                    letter-spacing: .5px;
+                }
+
+                &::after {
+                    background-image: url(../../../images/services/visitor.png);
+                }
+            }
+
+            &.increase {
+
+                h1 {
+                    margin-left: -6px;
+                    letter-spacing: .3px;
+                }
+
+                span {
+                    margin-left: -6px;
+                }
+
+                &::after {
+                    background-image: url(../../../images/services/increase.png);
+                }
+            }
+
+            &:hover::before {
+                background-image: url(../../../images/services/background-hover.png);
             }
         }
     }

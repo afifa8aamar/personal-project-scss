@@ -37,56 +37,57 @@
                 width: 40px;
                 height: 40px;
                 margin-right: 5px;
+                border-radius: 3px;
+                background-color: $color-13;
+                background-image: url(../../../images/footer/gmail.png);
+                background-repeat: no-repeat;
+                background-position: center;
 
                 &:last-child {
                     margin-right: 0;
                 }
 
                 &.gmail {
-                    background: url(../../../images/footer/Gmail.png);
-
+                    background-image: url(../../../images/footer/gmail.png);
                     &:hover {
-                        background: url(../../../images/footer/Gmail-Hover.png);
+                        background-color: $color-14;
                     }
                 }
 
                 &.twitter {
-                    background: url(../../../images/footer/Twitter.png);
-
+                    background-image: url(../../../images/footer/twitter.png);
                     &:hover {
-                        background: url(../../../images/footer/Twitter-Hover.png);
+                        background-color: $color-15;
                     }
                 }
 
                 &.facebook {
-                    background: url(../../../images/footer/Facebook.png);
-
+                    background-image: url(../../../images/footer/facebook.png);
                     &:hover {
-                        background: url(../../../images/footer/Facebook-Hover.png);
+                        background-color: $color-16;
                     }
                 }
 
                 &.behance {
-                    background: url(../../../images/footer/Behance.png);
+                    background-image: url(../../../images/footer/behance.png);
 
                     &:hover {
-                        background: url(../../../images/footer/Behance-Hover.png);
+                        background-color: $color-17;
                     }
                 }
 
                 &.deviantart {
-                    background: url(../../../images/footer/Deviantart.png);
-
+                    background-image: url(../../../images/footer/deviantart.png);
                     &:hover {
-                        background: url(../../../images/footer/Deviantart-Hover.png);
+                        background-color: $color-18;
                     }
                 }
 
                 &.flickr {
-                    background: url(../../../images/footer/Flickr.png);
+                    background-image: url(../../../images/footer/flickr.png);
 
                     &:hover {
-                        background: url(../../../images/footer/Flickr-Hover.png);
+                        background-color: $color-19;
                     }
                 }
             }

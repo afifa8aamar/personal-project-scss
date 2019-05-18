@@ -16,11 +16,35 @@
         font-size: 31px;
         text-transform: uppercase;
 
-        img {
+        &::before {
+            content: '';
+            display: block;
             position: absolute;
-            top: 42px;
-            right: 50%;
-            transform: translateX(50%);
+            bottom: -15px;
+            left: 51%;
+            width: 62%;
+            height: 1px;
+            transform: translateX(-50%);
+            background: $color-1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 10px;
+            bottom: -15px;
+            left: 50%;
+            width: 25px;
+            height: 18px;
+            margin-top: 30px;
+            transform: translateX(-50%);
+            background-color: $color-2;
+            background-image: url(../../../images/portfolio/portfolio.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: center;
+            background-position-x: center;
         }
     }
 

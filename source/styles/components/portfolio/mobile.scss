@@ -4,15 +4,20 @@
         margin-top: 38px;
         font-size: 27px;
 
-        > img {
-            top: 40px;
+        &::before {
+            bottom: -17px;
+        }
+
+        &::after {
+            top: 9px;
+            margin-left: -2px;
         }
     }
 
     .wrap {
         align-content: center;
         width: 87%;
-        padding-top: 57px;
+        padding-top: 59px;
 
         .row-1 {
             display: none;
@@ -20,12 +25,17 @@
 
         .row-2 {
             flex-direction: column;
+            margin-bottom: 7px;
 
             .col {
                 flex-grow: 1;
                 height: 163px;
                 margin-right: 0;
-                margin-bottom: 7px !important;
+                margin-bottom: 7px;
+
+                &.col-2 {
+                    margin-bottom: 6px;
+                }
 
                 .hover {
                     height: 58px;

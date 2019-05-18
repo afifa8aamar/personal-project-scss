@@ -8,10 +8,13 @@
         font-size: 28px;
         letter-spacing: -1px;
 
-        img {
-            top: 38px;
+        &::before {
+            bottom: -8px;
+            left: 50%;
+            width: 91%;
         }
     }
+    
 
     .wrap {
         flex-direction: column;
@@ -21,43 +24,36 @@
 
         .service {
             margin-right: 0;
-            margin-bottom: 37px;
+            margin-bottom: 35px;
 
-            a {
-                margin-bottom: 28px;
+            &::before {
+                margin-bottom: 27px;
             }
+        }
 
-            div {
+        &.graphchart {
+
+            h1 {
+                margin-bottom: 25px;
+                letter-spacing: -1px;
+            }
+        }
+
+        &.visitor {
+            margin-bottom: 36px;
+            letter-spacing: 0;
+
+            h1 {
+                margin-bottom: 4px;
+            }
+        }
+
+        &.increase {
+            margin-bottom: 33px;
+
+            h1 {
+                margin-bottom: 4px;
                 letter-spacing: 0;
-
-                h1 {
-                    margin-bottom: 3px;
-                    letter-spacing: -1px;
-                }
-            }
-
-            &.visitor {
-                margin-bottom: 40px;
-
-                div {
-
-                    h1 {
-                        margin-bottom: 4px;
-                        letter-spacing: 0;
-                    }
-                }
-            }
-
-            &.increase {
-                margin-bottom: 33px;
-
-                div {
-
-                    h1 {
-                        margin-bottom: 4px;
-                        letter-spacing: 0;
-                    }
-                }
             }
         }
     }

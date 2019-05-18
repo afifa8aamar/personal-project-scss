@@ -1,12 +1,11 @@
 .header {
-    padding-bottom: 7px;
 
     .wrap {
         width: 87%;
 
         .logo {
-            margin-top: 15px;
-            margin-bottom: 13px;
+            padding-top: 15px;
+            padding-bottom: 20px;
             font-size: 27px;
 
             &::before {
@@ -22,7 +21,6 @@
 
         .phone-menu {
             display: block;
-            margin-top: 7px;
 
             img {
                 width: 49px;

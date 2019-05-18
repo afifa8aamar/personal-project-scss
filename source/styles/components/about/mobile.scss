@@ -7,12 +7,9 @@
         margin-left: -1px;
         font-size: 27px;
 
-        img {
-            top: 41px;
-        }
-
-        span {
-            font-size: 27px;
+        &::before {
+            top: 10px;
+            bottom: -18px;
         }
     }
 
